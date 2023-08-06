@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+:root{
+  --primaryColor:#16425B;
+  --secondaryColor: #D9DCD6;
+  --accentColor: #ba324f;
+  --activeColor: #598ca9;
+}
+.bg-dark{
+  background-color: grey;
+
+}
+
+.Name{
+  color: white;
+  text-align: left;
+  display: block;
+}
+
+.navLinks a{
+  text-decoration: none;
+  color: white;
+}
+
+.topNavbar{
+  background-color: var(--primaryColor);
+  color: white;
+  width: 100vw;
+  overflow: hidden;
+}
+.topNavbar a{
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topNavbar a:hover{
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.topNavbar a:active{
+  background-color: var(--activeColor);
+  color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  header h1 {
+    display: block;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 1.3rem;
+  }
+  header h1 {
+    display: block;
+    margin: 5px 10px;
+    height: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+}
